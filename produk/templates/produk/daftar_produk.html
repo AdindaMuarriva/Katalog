@@ -1,0 +1,26 @@
+{% extends 'produk/base.html' %}
+
+{% block content %}
+
+<div class="section-header">
+    <div class="section-title">Catalog</div>
+    <span style="font-size:13px; color: var(--muted);">{{ produk|length }} items</span>
+</div>
+
+<div class="grid">
+    {% for item in produk %}
+    <div class="card">
+        <div class="card-img-wrap">
+            <img src="{{ item.image }}" alt="{{ item.name }}">
+        </div>
+        <div class="card-body">
+            <div class="card-sub">{{ item.category }}</div>
+            <h3>{{ item.name }}</h3>
+            <div class="price">{{ item.price }}</div>
+            <a href="/produk/{{ item.id }}/" class="btn">View</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
