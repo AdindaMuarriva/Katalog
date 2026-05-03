@@ -1,6 +1,4 @@
-# Katalog# 📦 Katalog Produk Sederhana (Django)
-
-## 👤 Identitas
+📦 Katalog Produk Sederhana (Django)
 
 * **Nama:** Adinda Muarriva
 * **NIM:** 2308107010001
